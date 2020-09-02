@@ -53,7 +53,9 @@ Iniciamos la busqueda de routers activando "Escanear redes" (se ejecutara una ve
 -
 
 En la lista se puede ver el nombre del router, la cantidad de dispositivos conectados (Celulares, televisiones, notebooks, etc) , el nivel de señal del router (en dB) y los minutos de inactividad (minutos que transcurrieron desde la ultima vez que Airodump capturo algun paquete proveniente de ese router)
+
 ![Build Status](https://github.com/Ariel65536/CapturadorHandshakes/raw/master/Imagenes/PantallaRouters2.png)
+
 "Ocultar inactivos" oculta de la lista los routers con un periodo de inactividad superior a los 5 minutos.
 El boton Resetear borra los datos sobre los routers obtenidos en la sesion actual.
 
@@ -82,6 +84,7 @@ En esta pantalla podemos desautenticar a un cliente especifico que seleccionemos
 Si Airodump logra capturar un handshake con exito veremos esta pantalla.
 El Handshake se guarda en la carpeta de la aplicacion Capturadora-32bits/Handshakes/ con formato .cap
 Una vez que el handshake es capturado, se guarda en un registro para recordarnos que el handshake de ese router ya lo tenemos en ./handshakes/
+
 ![Build Status](https://github.com/Ariel65536/CapturadorHandshakes/raw/master/Imagenes/PantallaClientes3.png)
 
 -
