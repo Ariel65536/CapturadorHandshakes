@@ -63,6 +63,7 @@ El boton Resetear borra los datos sobre los routers obtenidos en la sesion actua
 
 Con el paso del tiempo Airodump comenzara a descubrir los dispositivos conectados a un router (si es que los hay), que son necesarios para poder capturar un WPA handshake
 Seleccionamos el router "Ariel" para intentar capturar un handshake
+
 ![Build Status](https://github.com/Ariel65536/CapturadorHandshakes/raw/master/Imagenes/PantallaRouters3.png)
 
 -
