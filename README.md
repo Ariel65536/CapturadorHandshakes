@@ -6,7 +6,7 @@ Primero es requerido instalar Java, Xterm y Aircrack-ng.
 ```sh
 $ sudo apt-get update
 $ sudo apt install default-jre
-$ sudo apt xterm
+$ sudo apt install xterm
 $ sudo apt install aircrack-ng
 ```
 Acorde a la arquitectura de su sistema descargue la version de 32 o 64 bits.
@@ -35,21 +35,24 @@ Dirijase a la carpeta que acaba de extraer y ejecute la aplicacion.
 $ sudo sh CapturadorHandshakes
 ``` 
 
-### Como usar
+### Como usar el capturador
 Al ejecutar por primera vez la aplicacion comenzará a buscar adaptadores de red (USB o integrado).
 ![Build Status](https://github.com/Ariel65536/CapturadorHandshakes/raw/master/Imagenes/PantallaPrincipal1.png)
 
 Al activar el modo 5Ghz el adaptador de red solo buscara redes 5GHz y la funcion para desautenticar usuario no funcionara correctamente
+
 
 -
 
 Una vez que haya detectado al menos un adaptador, seleccionamos el que vamos a usar
 ![Build Status](https://github.com/Ariel65536/CapturadorHandshakes/raw/master/Imagenes/PantallaPrincipal2.png)
 
+
 -
 
 Iniciamos la busqueda de routers activando "Escanear redes" (se ejecutara una ventana Xterm con Airodump)
 ![Build Status](https://github.com/Ariel65536/CapturadorHandshakes/raw/master/Imagenes/PantallaRouters1.png)
+
 
 -
 
@@ -60,12 +63,14 @@ En la lista se puede ver el nombre del router, la cantidad de dispositivos conec
 "Ocultar inactivos" oculta de la lista los routers con un periodo de inactividad superior a los 5 minutos.
 El boton Resetear borra los datos sobre los routers obtenidos en la sesion actual.
 
+
 -
 
 Con el paso del tiempo Airodump comenzara a descubrir los dispositivos conectados a un router (si es que los hay), que son necesarios para poder capturar un WPA handshake
 Seleccionamos el router "Ariel" para intentar capturar un handshake
 
 ![Build Status](https://github.com/Ariel65536/CapturadorHandshakes/raw/master/Imagenes/PantallaRouters3.png)
+
 
 -
 
@@ -75,11 +80,13 @@ En esta pantalla podemos simplemente esperar a que algun dispositivo se reconect
 Tambien podemos acelerar el proceso haciendo uso de Aireplay, una herramienta capaz de desconectar al dispositivo del router obligando al mismo a reconectarse y permitiendo a Airodump capturar el handshake
 ![Build Status](https://github.com/Ariel65536/CapturadorHandshakes/raw/master/Imagenes/PantallaClientes1.png)
 
+
 -
 
 En esta pantalla podemos desautenticar a un cliente especifico que seleccionemos, o activar "Auto Desauth" para desautenticar a los usuarios de forma automatica cada cierto intervalo que indiquemos con el deslizador
 (En el momento de desautenticar a un usuario se abrira una ventana de Xterm ejecutando Aireplay y la misma se cerrara al finalizar el envio de paquetes de desautenticacion)
 ![Build Status](https://github.com/Ariel65536/CapturadorHandshakes/raw/master/Imagenes/PantallaClientes2.png)
+
 
 -
 
@@ -88,6 +95,7 @@ El Handshake se guarda en la carpeta de la aplicacion Capturadora-32bits/Handsha
 Una vez que el handshake es capturado, se guarda en un registro para recordarnos que el handshake de ese router ya lo tenemos en ./handshakes/
 
 ![Build Status](https://github.com/Ariel65536/CapturadorHandshakes/raw/master/Imagenes/PantallaClientes3.png)
+
 
 -
 
