@@ -38,6 +38,7 @@ $ sudo sh CapturadorHandshakes
 ### Como usar
 Al ejecutar por primera vez la aplicacion comenzará a buscar adaptadores de red (USB o integrado).
 ![Build Status](https://github.com/Ariel65536/CapturadorHandshakes/raw/master/Imagenes/PantallaPrincipal1.png)
+
 Al activar el modo 5Ghz el adaptador de red solo buscara redes 5GHz y la funcion para desautenticar usuario no funcionara correctamente
 
 -
